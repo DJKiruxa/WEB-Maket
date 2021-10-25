@@ -92,15 +92,12 @@ a {
 .label2 button{
 	background: none;
 	border: none;
-	transform-origin: left;
-	
-	
-	
+	transform-origin: left;	
 }
-.right__button{
+.right__button img{
 	background: none;
 	transform-origin: center;
-	transform: scale(-1, 1);
+	transform: rotate(180deg);
 	
 	/*transform-origin: 100%, 50%;
 	transform: rotate(180deg);*/
