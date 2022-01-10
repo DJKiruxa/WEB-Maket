@@ -1,68 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+@font-face{
+	font-family: 'Gotham Pro Regular';
+	src: url('../fonts/gothampro.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18;
+  }
+
+  @font-face{
+	font-family: 'Gotham Pro Medium';
+	src: url('../fonts/gothampro_medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  @font-face{
+	font-family: 'Gotham Pro Light';
+	src: url('../fonts/gothampro_light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+
+
 
 :root {
 	--section-background: #F9F8F5;
 	--font-color: #000;
 	/* fonts sizes */
 	--font-size: large;
+
+
+	--maxWidthContainer: 1680;
+	--maxWidth: 1920;
 }
 
 * {
-	font-family: Poppins, sans-serif;
+	font-family: Gotham Pro Regular;
 	color: var(--font-color);
-	/* font-size: var(--font-size); */
-}
-
-header {
-	background-color: var(--section-background);
-}
-
-.menu__list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.menu__item {
-
-	font-size: 20px;
-	font-weight: 400;
-	display: inline-block;
-}
-
-.header__content {
-	display: flex;
-	flex-direction: row;
 
 	
+  	
 	
-
-}
-.header__content::before{
-	content: "";
-	width: 100px;
-	
-	position: absolute;
-	left: 50px;
-	top: 310px;
-	border-top: 1px solid black;
-	-webkit-transform: rotate(90deg);
-	transform: scale(-1, 1);
 }
 
-
-.header__oveview{
-	margin-top: 180px;
-	margin-left: 225px;
-}
-
-.header__content img {
-	/*width: 55px;*/
-}
-
-.header_img{
-	width: 865px;
-	margin-top: 71px;
-	margin-right: 26;
+h1{
+	font-family: Gotham Pro Light;
+	color: var(--font-color);
 }
 
 a {
@@ -70,21 +53,124 @@ a {
 	
 }
 
-.label2 div{
+/*  HEADER */
+header {
+	background-color: var(--section-background);
+	margin-top: 32px;
+	margin-left: 28px;
+	margin-right: 52px;
+	margin-bottom: 0px;
 
-	display: inline;
+	
+}
+.menu {
+	padding-top: 38px;
+	padding-left:92px;
+	padding-right:68px;
+	padding-bottom: 40px;
+}
+
+.menu__list {
+	display:flex;
+	justify-content: space-between;
+}
+
+.menu__item__png{
+	display: block;
+	margin-top: auto;
+    margin-bottom: auto
 
 }
+.menu__item {
+
+	font-size: 20px;
+	font-weight: 400;
+	display: inline-block;
+	margin-top: auto;
+    margin-bottom: auto
+}
+/*  HEADER */
+
+/*  MAIN */
+
+.header__content {
+	margin-left: 28px;
+	margin-right: 52px;
+	margin-bottom: 0px;
+	background-color: var(--section-background);
+	display:flex;
+	justify-content: space-between;
+	
+	
+}
+
+
+.header__content::before{
+	content: "";
+	width: 181px;
+	
+	position: absolute;
+	height: 0px;
+	left: 40px;
+	top: 322px;
+	border-top: 1px solid black;
+	-webkit-transform: rotate(90deg);
+	transform: scale(-1, 1);
+}
+
+
+.header__oveview{
+	padding-top: 108px;
+	padding-left: 225px;
+	padding-bottom: 271px;
+	z-index: 1;
+	position: absolute;
+}
+
+.label {
+	
+
+}
+
+
+.header_img{
+	width: 865px;
+	position: relative;
+	padding-top: 31px;
+	padding-right: 79px;
+	padding-left: 946px;
+	z-index: 0;
+	
+}
+
+.number {
+	font-family: Gotham Pro Light;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 29px;
+}
+
 .label p {
-	line-height: 30px;
+	font-size: 20px;
+	line-height: 150%;
+	margin-bottom: 40px;
 }
+
 
 .label h1 {
 	font-weight: 300;
 	font-size: 70px;
 	width: 729px;
 	line-height: 100%;
+	margin-top: 24px;
+	margin-bottom: 16px;
 }
+
+.label2 div{
+
+	display: inline;
+}
+
 .label2 img{
 	width: 55px;
 }
@@ -104,6 +190,45 @@ a {
 	
 }
 
+.endNav{
+	margin-left: 28px;
+	margin-right: 52px;
+	margin-bottom: 48px;
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--section-background);
+}
+
+
+/*  MAIN */
+.First_section{
+	
+
+}
+
+.container{
+	display: block;
+	width: 100%;
+	
+}
+.container_second{
+	display: flex;
+	justify-content: space-between;
+}
+
+.config{
+	display: flex;
+}
+
+.column{
+	display: block;
+	
+}
+
+.second_column{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}	
 
 footer section p:nth-child(2){
 	text-align: center;
@@ -121,10 +246,7 @@ li{
 	border: 1px solid black;
 }*/
 
-.endNav{
-	display: flex;
-	justify-content: space-between;
-}
+
 
 .downButton, .downButton div{
 	display: flex;
