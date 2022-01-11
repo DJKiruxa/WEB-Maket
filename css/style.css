@@ -53,6 +53,10 @@ a {
 	
 }
 
+li{
+	list-style: none;
+}
+
 /*  HEADER */
 header {
 	background-color: var(--section-background);
@@ -92,12 +96,15 @@ header {
 /*  HEADER */
 
 /*  MAIN */
-
-.header__content {
+.first_section{
+	background-color: var(--section-background);
 	margin-left: 28px;
 	margin-right: 52px;
-	margin-bottom: 0px;
-	background-color: var(--section-background);
+	margin-bottom: 48px;
+}
+.header__content {
+	
+	
 	display:flex;
 	justify-content: space-between;
 	
@@ -123,13 +130,9 @@ header {
 	padding-top: 108px;
 	padding-left: 225px;
 	padding-bottom: 271px;
-	z-index: 1;
+	z-index: 2;
 	position: absolute;
-}
-
-.label {
 	
-
 }
 
 
@@ -139,7 +142,7 @@ header {
 	padding-top: 31px;
 	padding-right: 79px;
 	padding-left: 946px;
-	z-index: 0;
+	z-index: 1;
 	
 }
 
@@ -191,62 +194,18 @@ header {
 }
 
 .endNav{
-	margin-left: 28px;
-	margin-right: 52px;
-	margin-bottom: 48px;
+	
+	
 	display: flex;
 	justify-content: space-between;
 	background-color: var(--section-background);
 }
 
-
-/*  MAIN */
-.First_section{
-	
+.language {
+	padding-left: 91px;
+	padding-bottom: 61px;
 
 }
-
-.container{
-	display: block;
-	width: 100%;
-	
-}
-.container_second{
-	display: flex;
-	justify-content: space-between;
-}
-
-.config{
-	display: flex;
-}
-
-.column{
-	display: block;
-	
-}
-
-.second_column{
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-}	
-
-footer section p:nth-child(2){
-	text-align: center;
-}
-
-li{
-	list-style: none;
-}
-
-
-
-/*.header__content::before{
-	content: "";
-	width: 100px;
-	border: 1px solid black;
-}*/
-
-
 
 .downButton, .downButton div{
 	display: flex;
@@ -256,7 +215,173 @@ li{
 
 }
 
+.soundButton{
+	padding-right:69px;
+	padding-bottom:72px;
+}
+.downButton p{
+	padding-bottom: 8px;
+}
+
 .downButton img{
 	display: block;
 	width:  36px;
+	padding-bottom: 16px;
+}
+
+
+/*  MAIN */
+
+.second_section{
+	margin-top: 120px;
+	margin-left: 28px;
+	margin-right: 52px;
+}
+.container{
+	display: block;
+	width: 100%;
+	
+}
+.container_second{
+	display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 756px;
+    list-style: none;
+	
+	
+}
+
+.config{
+	display: flex;
+}
+
+.column{
+	height: 756px;
+	width: 509px;
+	display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+.column button{
+	padding-left: 56px;
+	background: none;
+	border: none;
+	display: inline-flex;
+	
+	
+}
+
+.column button img{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.column_text{
+	padding-left: 56px;
+}
+
+.image12 {
+	width: 373px;
+}
+.config{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	text-align: stretch;
+	
+}
+.second_column{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.third_section{
+	margin-top: 120px;
+	margin-left: 28px;
+	margin-right: 52px;
+	display: flex;	
+	justify-content: space-between;
+}
+
+.third_section_text{
+	max-width: 663px;
+	max-height: 646px;
+	padding-bottom: 169px;
+}
+
+.third_section_text h1{
+	font-family: Gotham Pro Light;
+	max-width: 663px;
+	max-height: 210px;
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 116%;
+}
+
+.third_section_img{
+	display: inline-block;
+}
+
+.banners-carousel {
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--section-background);
+}
+
+.banners-carouselconteiner {
+    background-color: var(--section-background);
+    width: 100%;
+    overflow-x: scroll;
+	padding-top: 80px;
+	padding-bottom: 176px;
+}
+
+.banners-carouselwrapper {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+
+    gap: 120px;
+
+    align-content: center;
+}
+
+.banners-carouselliitems{
+	width:auto;
+}
+.banners-carousel__wrapper::-webkit-scrollbar {
+	width: 5px;
+  	height: 2px;
+	scrollbar-width: thin;
+}
+
+.banners-carousel__wrapper::-webkit-scrollbar-button {
+    
+}
+
+.banners-carousel__wrapper::-webkit-scrollbar-track {
+    background-color: darkgrey;
+}
+
+.first_footer_section{
+	padding-bottom: 120px;
+	padding-top: 120px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center
+}
+footer section p:nth-child(2){
+	text-align: center;
+}
+
+.ul_container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
 }
