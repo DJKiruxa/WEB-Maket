@@ -379,9 +379,14 @@ footer section p:nth-child(2){
 	text-align: center;
 }
 
+.second_footer_section{
+	background-color:var(--section-background);
+}
+
 .ul_container{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding-top: 60px;
 	
 }
