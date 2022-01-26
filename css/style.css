@@ -96,8 +96,11 @@ header {
 
 .menu__item:hover {
     text-decoration: underline;   
-    transition: all 0.5s;
+	color: var(--font-color);
+	text-shadow: rgb(253, 228, 129) 1px 0 10px;
+	transition: all 0.5s;
 }
+
 
 
 /*  HEADER */
@@ -388,6 +391,8 @@ footer section p:nth-child(2){
 
 .second_footer_section{
 	background-color:var(--section-background);
+	position: -webkit-sticky;
+	position: sticky;
 }
 
 .ul_container{
@@ -407,3 +412,4 @@ footer section p:nth-child(2){
 .email_form_button{
 	font-style: oblique;
 }
+
