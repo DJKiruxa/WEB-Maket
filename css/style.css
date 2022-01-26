@@ -93,6 +93,13 @@ header {
 	margin-top: auto;
     margin-bottom: auto
 }
+
+.menu__item:hover {
+    text-decoration: underline;   
+    transition: all 0.5s;
+}
+
+
 /*  HEADER */
 
 /*  MAIN */
@@ -389,4 +396,14 @@ footer section p:nth-child(2){
 	justify-content: space-between;
 	padding-top: 60px;
 	
+}
+
+.email_form{
+	color: white;
+	font-style: oblique;
+
+}
+
+.email_form_button{
+	font-style: oblique;
 }

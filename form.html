@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>WEBMaket</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/formstyle.css">
+</head>
+
+<body>
+	<header class="header">
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__item"><a href="#">Товары</a></li>
+				<li class="menu__item"><a href="#">Услуги</a></li>
+				<li class="menu__item__png"><img src="img/Logo.png" alt="Что-то сработало не так"></li>
+				<li class="menu__item"><a href="index.html">Блог</a></li>
+				<li class="menu__item"><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <section class = "form_section">
+            <form class="formf" method="post" name="myform" data-netlify="true">
+
+                <fieldset class="label1">
+                    <legend class="formagl"> Личная информация </legend>
+                    <label> Имя*: <input class="zvet" type="text" name="Имя" placeholder="Имя Пользователя" required>
+                    </label>
+                    <label> Дата Рождения: <input type="date" name="Дата Рождения"> </label>
+                    <label> Пол: </label>
+                    <select name="Пол">
+                        <option value="-" selected>-</option>
+                        <option value="М">М</option>
+                        <option value="Ж">Ж</option>
+                    </select>
+
+
+                </fieldset>
+
+                <fieldset class = "label2">
+
+                    <legend class="formagl"> Контактные Данные </legend>
+                    <p class="label1">
+                        <label> Email* <input class="zvet" type="email" name="email" placeholder="post@gmail.com"
+                                required></label>  </p>
+                     <p  class="label1"> <label> Придумайте пароль* <input class="zvet" type="password" name="password"
+                                placeholder="password" required></label></p>  
+                  
+
+                    <p class="label1"><label> Контактный номер телефона <input type="tel" name="tel"
+                                placeholder="89296556644"></label></p>
+
+                    <p class="label1">
+                        <label> Удобный интервал для связи: </label>
+                        <label><input type="checkbox" name="morning" value="Утром"> <span class="morn">Утром</span>
+                        </label>
+                        <label><input type="checkbox" name="day" value="Днем"> <span class="afternoon"> Днем
+                            </span></label>
+                        <label><input type="checkbox" name="evening" value="Вечером"> <span class="night">
+                                Вечером</span></label>
+                    </p>
+
+                    <button class="butform" type="submit"> Отправить </button>
+                    <button class=" butDis" type="reset" disabled> Сбросить </button>
+                </fieldset>
+
+
+            </form>
+
+
+        </section>
+        <section>
+            <form>
+                <dl>
+                    <dt>Псевдоклассы</dt>
+                    <dd>Псевдоклассами называют селекторы, которые влияют на существующие элементы документа.
+                        Псевдоэлементами обычно задают и меняют область, которая изначально отсутствовала в исходном
+                        файле.
+                    </dd>
+                    <dt>Псевдоэлементы</dt>
+                    <dd>Это специальное ключевое слово, которое добавляется к css-селектору и позволяет задавать стили
+                        для части выбранного HTML-элемента. </dd>
+                </dl>
+
+                <div class="divCheck">
+                    <div class="divCheck2">
+                        <span class="textform">:Псевдоклассы</span>
+                        <label><input type="checkbox" name="root" value=":root" checked> <span
+                                class="chform">:root</span></label>
+                        <label><input type="checkbox" name="link" value=":link"> <span
+                                class="chform">:link</span></label>
+                        <label><input type="checkbox" name="visited" value=":visited"> <span
+                                class="chform">:visited</span></label>
+                        <label><input type="checkbox" name="hover" value=":hover" checked> <span
+                                class="chform">:hover</span></label>
+                        <label><input type="checkbox" name="active" value=":active" checked> <span
+                                class="chform">:active</span></label>
+                        <label><input type="checkbox" name="focus" value=":focus" checked> <span
+                                class="chform">:focus</span></label>
+
+                    </div>
+
+                    <div class="divCheck2">
+
+                        <span class="textform">::Псевдоэлементы</span>
+                        <label class="psclass"><input type="checkbox" name="first-letter" value="::first-letter"
+                                checked> <span class="chform">::first-letter</span></label>
+                        <label class="psclass"><input type="checkbox" name="first-line" value="::firs-line"> <span
+                                class="chform">::firs-line</span></label>
+                        <label class="psclass"><input type="checkbox" name="selection" value="::selection" checked>
+                            <span class="chform">::selection</span></label>
+                        <label class="psclass"><input type="checkbox" name="before" value="::before" checked> <span
+                                class="chform">::before</span></label>
+                        <label class="psclass"><input type="checkbox" name="after" value="::aftere" checked> <span
+                                class="chform">::aftere</span></label>
+                        <label class="psclass"><input type="checkbox" name="placeholder" value="::placeholder"> <span
+                                class="chform">::placeholder</span></label>
+
+                    </div>
+
+
+                </div>
+            </form>
+
+
+        </section>
+
+    </main>
+
+
+
+
+    
+    <footer>
+		<section class = "second_footer_section">
+			<ul class ="ul_container">
+				<li>
+					<ul>
+						<li>
+							<img src="img/Logo.png" alt="Что-то сработало не так">
+						</li>
+						<li>
+							<img src="img/image 15.png" alt="Что-то сработало не так">
+							<p>
+								RU
+							</p>
+							<button>
+								<img src="img/arw_dropdown.png" alt="Что-то сработало не так">
+							</button>
+						</li>
+						<li>
+							<img src="img/© 2020 Audioshells.png" alt="Что-то сработало не так">
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<h4>
+								Смотрите
+							</h4>
+						</li>
+						<li>
+							Товары
+						</li>
+						<li>
+							Услуги
+						</li>
+						<li>
+							Блог
+						</li>
+						<li>
+							Контакты
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<h4>
+								Обслуживание клиентов
+							</h4>
+						</li>
+						<li>
+							Свяжитесь с нами
+						</li>
+						<li>
+							Политика конфидициальности
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<h4>
+								Контакты
+							</h4>
+						</li>
+						<li>
+							<div>
+								<img src="img/phone_icon 2.png" alt="Что-то сработало не так">
+							</div>
+							<div>
+								<p>
+									8 (800) 200-46-66
+								</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="img/email_2.png" alt="Что-то сработало не так">
+							</div>
+							<div>
+								<p>
+									auioshells@gmail.com
+								</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/Group 142.png" alt="Что-то сработало не так">
+							<img src="img/Group 143.png" alt="Что-то сработало не так">
+							<img src="img/Group 146.png" alt="Что-то сработало не так">
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+	</footer>
+	
+</body>
