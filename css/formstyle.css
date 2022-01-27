@@ -210,7 +210,7 @@ dd::after
 {
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
+    margin-left: 0px;
     margin-bottom: 10px;
     line-height: 40px;
     font-weight: lighter;
