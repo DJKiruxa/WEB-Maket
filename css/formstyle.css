@@ -201,7 +201,7 @@ dd::after
 .divCheck
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-left: 100px;
     padding-bottom: 100px;
 }
@@ -209,7 +209,7 @@ dd::after
 .divCheck2
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 100px;
     margin-bottom: 10px;
     line-height: 40px;
