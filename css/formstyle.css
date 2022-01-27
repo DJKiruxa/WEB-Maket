@@ -264,3 +264,7 @@ fieldset
 	padding-top: 60px;
 	
 }
+
+:required{
+    background-color: var(--section-background);
+}
