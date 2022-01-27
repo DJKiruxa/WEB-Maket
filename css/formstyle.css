@@ -173,7 +173,7 @@ dt
 {
 
     color: var(--but2);
-    margin-left: 100px;
+    margin-left: 28px;
     margin-bottom: 10px;
     font-size: 20px;
 }
@@ -182,7 +182,7 @@ dt
 dd
 {
    
-    margin-left: 100px;
+    margin-left: 28px;
     margin-bottom: 10px;
     font-size: 18px;
     line-height: 25px;
@@ -202,7 +202,7 @@ dd::after
 {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    padding-left: 28px;
     padding-bottom: 100px;
 }
 
